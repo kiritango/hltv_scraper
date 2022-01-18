@@ -22,6 +22,7 @@ def build_link(category, date_range, _map, top):
         - category : The category filter;
         - date_range : The date range filter;
         - _map : The maps chosen in the filter.
+	- top : The ranking filter.
     '''
 
     # Properly assemble the date range
