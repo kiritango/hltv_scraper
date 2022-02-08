@@ -43,7 +43,7 @@ Arguments:
     
 Note that unlike the other functions, this one does not take any subcategory arguments.
 
-## scrape(driver, category, date_range, __map, top)
+## scrape(driver, category, date_range, _map, top)
         
 A function to scrape different parts of the hltv website.
     
@@ -69,5 +69,19 @@ Arguments:
 - map : The desired map. Accepted arguments are:
   + all : Grab data for all maps;
   + de_(MAP NAME) : Grab data for any specific map
+- top : The desired rankings of teams. Accepted arguments are:
+  + 5 : Stats from matches between top 5 teams
+  + 10 : Stats from matches between top 10 teams
+  + 20 : Stats from matches between top 20 teams
+  + 30 : Stats from matches between top 30 teams
+  + 50 : Stats from matches between top 50 teams
+
+## scrape_range(driver, category, date_range, _map, top, date_scale)
+
+A function to scrape the running statistics for a given category from the last n days of performance.
+
+Arguments as in the previous function but 1 additional:
+- date_scale : an integer number of days for which stats will be collected.
+
  
  
