@@ -500,8 +500,8 @@ def scrape(driver, category, date_range, _map, top):
     
         return -1
 
-# A function to scrape the running statistics for a given category from the last 30 days of performance
-def scrape_range(driver, category, date_range, _map, top, date_scale=30):
+# A function to scrape the running statistics for a given category from the last n days of performance
+def scrape_range(driver, category, date_range, _map, top, date_scale):
     
     # Set up a blank dataframe to host our data
     df = pd.DataFrame()
